@@ -1,0 +1,62 @@
+🚢 Docker Cheat Sheet – Your Ultimate Guide! 🐳
+💡 Docker is a must-know for developers and DevOps engineers! Whether you’re a beginner or an expert, here’s your one-stop guide for essential Docker commands! 📌
+
+🚀 Getting Started
+Check if Docker is installed and get system details:
+docker --version    # Check Docker version  
+docker info         # Display system info  
+docker help         # Get help with commands  
+
+📦 Image Management
+Manage Docker images like a pro:
+docker images                    # List all images  
+docker pull <image>               # Pull an image from Docker Hub  
+docker rmi <image>                # Remove an image  
+docker build -t <image-name> .    # Build an image from Dockerfile  
+docker tag <image> <repo>:<tag>   # Tag an image  
+docker push <repo>:<tag>          # Push image to Docker Hub 
+
+🎛️ Container Management
+Run, stop, and manage containers with ease:
+docker ps                         # List running containers  
+docker ps -a                      # List all containers (including stopped)  
+docker run <image>                # Run a new container  
+docker run -d <image>             # Run in detached mode  
+docker run -it <image> bash       # Start an interactive container  
+docker stop <container>           # Stop a running container  
+docker start <container>          # Start a stopped container  
+docker restart <container>        # Restart a container  
+docker rm <container>             # Remove a container  
+docker logs <container>           # View logs  
+docker exec -it <container> bash  # Access container shell  
+
+🔗 Docker Networking
+Connect and manage container networks:
+docker network ls                 # List networks  
+docker network inspect <name>      # Inspect network details  
+docker network create <name>       # Create a custom network  
+docker network rm <name>           # Remove a network  
+
+💾 Docker Volumes
+Manage persistent storage for containers:
+docker volume ls                   # List volumes  
+docker volume create <name>         # Create a volume  
+docker volume rm <name>             # Remove a volume  
+docker run -v <volume>:/data <image>  # Mount a volume 
+
+🛠️ Docker Compose
+Handle multi-container applications:
+docker-compose up       # Start services from docker-compose.yml  
+docker-compose down     # Stop services  
+docker-compose ps       # List running services  
+docker-compose logs     # View logs  
+
+🔥 Dockerfile Essentials
+Build custom images with these key instructions:
+FROM        # Define the base image  
+RUN         # Execute commands during image build  
+CMD         # Default command when container starts  
+ENTRYPOINT  # Main entry command with arguments  
+COPY        # Copy files from host to container  
+WORKDIR     # Set working directory inside the container  
+EXPOSE      # Specify ports for external access  
